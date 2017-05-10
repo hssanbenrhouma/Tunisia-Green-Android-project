@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceListItem"
+            android:text="Description :"
+            android:id="@+id/txt_emplacement"
+            android:textSize="7pt"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DescriptionDeclaration"
+            android:layout_below="@+id/txt_emplacement"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            style="@style/Platform.V11.AppCompat.Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take a photo"
+            android:id="@+id/btnphoto"
+            android:layout_above="@+id/btnDeclarer"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            style="@style/Buttonconsul"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/btnDeclarer"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceListItem"
+            android:text="City :"
+            android:textSize="7pt"
+            android:id="@+id/ReginDeclaration"
+            android:layout_below="@+id/DescriptionDeclaration"
+            android:layout_alignLeft="@+id/spinnerDec"
+            android:layout_alignStart="@+id/spinnerDec" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerDec"
+            android:spinnerMode="dialog"
+            android:layout_below="@+id/ReginDeclaration"
+            android:layout_alignLeft="@+id/btnphoto"
+            android:layout_alignStart="@+id/btnphoto"
+            android:layout_alignRight="@+id/btnphoto"
+            android:layout_alignEnd="@+id/btnphoto" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageviewPrendre"
+            android:layout_below="@+id/spinnerDec"
+            android:layout_above="@+id/btnphoto"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/prendrephoto"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+</LinearLayout>

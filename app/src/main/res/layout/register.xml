@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.dell.tunisiagreen.Register">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:background="@drawable/no"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="@color/bg_login"
+        android:id="@+id/logotext"
+        android:textSize="12pt"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:hint="Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/RegEmail"
+        android:layout_above="@+id/usename_reg"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="city  :"
+        android:textSize="9pt"
+        android:id="@+id/textView6"
+        android:layout_above="@+id/spinnerRegiser"
+        android:layout_alignLeft="@+id/spinnerRegiser"
+        android:layout_alignStart="@+id/spinnerRegiser" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerRegiser"
+        android:spinnerMode="dialog"
+        android:layout_above="@+id/buttonreg"
+        android:layout_alignLeft="@+id/buttonreg"
+        android:layout_alignStart="@+id/buttonreg"
+        android:layout_alignRight="@+id/buttonreg"
+        android:layout_alignEnd="@+id/buttonreg" />
+
+    <Button
+        style="@style/Buttonconsul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/buttonreg"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/passconfirm_reg"
+        android:layout_alignEnd="@+id/passconfirm_reg"
+        android:layout_alignLeft="@+id/passconfirm_reg"
+        android:layout_alignStart="@+id/passconfirm_reg" />
+
+    <EditText
+        android:hint="Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/usename_reg"
+        android:layout_above="@+id/password_reg"
+        android:layout_alignLeft="@+id/RegEmail"
+        android:layout_alignStart="@+id/RegEmail" />
+
+    <EditText
+        android:hint="password"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password_reg"
+        android:layout_above="@+id/passconfirm_reg"
+        android:layout_alignLeft="@+id/usename_reg"
+        android:layout_alignStart="@+id/usename_reg" />
+
+    <EditText
+        android:hint="re-enter password"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passconfirm_reg"
+        android:layout_above="@+id/textView6"
+        android:layout_alignLeft="@+id/password_reg"
+        android:layout_alignStart="@+id/password_reg" />
+
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView3"
+            android:background="@drawable/no"
+android:layout_marginTop="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TunisiaGreen"
+            android:textColor="@color/bg_login"
+            android:id="@+id/logotext"
+            android:textSize="12pt"
+            android:layout_below="@+id/imageView3"
+            android:layout_marginTop="50dp"
+            android:layout_alignRight="@+id/btnPassChangeCit"
+            android:layout_alignEnd="@+id/btnPassChangeCit" />
+
+        <Button
+            style="@style/Buttonconsul"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Declare a polluted place"
+            android:textColorHint="@color/bg_login"
+            android:id="@+id/btnwelcometodeclarationCit"
+            android:layout_below="@+id/logotext"
+            android:layout_marginTop="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Account settings"
+            android:id="@+id/param"
+            android:textSize="10pt"
+            android:layout_above="@+id/btnPassChangeCit"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            style="@style/Buttonconsul"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modify your password"
+            android:id="@+id/btnPassChangeCit"
+            android:layout_above="@+id/btnSuppCompteCIT"
+            android:onClick="btnClickchangePassCit"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            style="@style/Buttonconsul"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete your password"
+            android:id="@+id/btnSuppCompteCIT"
+            android:shadowColor="@color/btn_logut_bg"
+            android:onClick="btnClickDeleteCmpCit"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/btnPassChangeCit"
+            android:layout_alignEnd="@+id/btnPassChangeCit"
+            android:layout_alignLeft="@+id/btnPassChangeCit"
+            android:layout_alignStart="@+id/btnPassChangeCit" />
+
+
+    </RelativeLayout>
+</LinearLayout>

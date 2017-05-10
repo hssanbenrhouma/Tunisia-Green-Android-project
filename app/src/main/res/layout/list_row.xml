@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/wallet_dim_foreground_holo_dark"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="106dp"
+            android:layout_height="32dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="13pt"
+            android:id="@+id/ListrowNom"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/imglist"
+            android:layout_toStartOf="@+id/imglist" />
+
+        <TextView
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:id="@+id/ListrowDate"
+            android:textSize="11pt"
+            android:layout_gravity="right"
+            android:layout_below="@+id/ListrowNom"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imglist"
+            android:paddingLeft="150dp"
+            android:paddingTop="50dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/ListrowDate" />
+
+    </RelativeLayout>
+
+</LinearLayout>

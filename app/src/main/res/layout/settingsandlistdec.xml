@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imgmyimg">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView3"
+            android:background="@drawable/no"
+android:layout_marginTop="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TunisiaGreen"
+            android:textColor="@color/bg_login"
+            android:id="@+id/logotext5"
+            android:textSize="12pt"
+            android:layout_below="@+id/imageView3"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            style="@style/Buttonconsul"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View declarations"
+            android:shadowColor="@color/bg_login"
+            android:id="@+id/btnwelcometodeclarations"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Account settings :"
+            android:id="@+id/param"
+            android:textSize="10pt"
+            android:layout_above="@+id/btnModifPassResponsable"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            style="@style/Buttonconsul"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modify your password"
+            android:id="@+id/btnModifPassResponsable"
+            android:onClick="Buclick"
+            android:layout_above="@+id/btnSuppCompteResp"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            style="@style/Buttonconsul"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete your password"
+            android:id="@+id/btnSuppCompteResp"
+            android:shadowColor="@color/btn_logut_bg"
+            android:onClick="BuclickSuppCompte"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/btnModifPassResponsable"
+            android:layout_alignStart="@+id/btnModifPassResponsable" />
+
+
+    </RelativeLayout>
+</LinearLayout>
